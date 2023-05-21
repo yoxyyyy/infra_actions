@@ -63,4 +63,4 @@ jobs:
           script: |
             sudo docker pull yoxyyyy/infra_actions
             sudo docker stop $(sudo docker ps -a -q)
-            sudo docker run --rm -d -p 8000:8000 yoxyyyy/infra_actions
+            sudo docker run --rm -d -p 8001:8001 yoxyyyy/infra_actions
