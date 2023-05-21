@@ -59,7 +59,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
-
+ 
           script: |
             sudo docker pull yoxyyyy/infra_actions
             sudo docker stop $(sudo docker ps -a -q)
